@@ -1,48 +1,24 @@
 # Ax-Development
-Welcome to Ax Development – your go-to hub for Minecraft Skripting and Discord Bot services!
-
-About
-
-At Ax Development, we provide custom Minecraft scripts and Discord bots tailored to your needs. Whether you're looking to enhance your server or automate your Discord community, we've got you covered.
+Ax Development provides custom Minecraft scripts and Discord bot services. We create solutions tailored to your needs, whether it's for server enhancements or community automation.
 
 Services
 
-Minecraft Skripting:
-
+Minecraft Skripting
 Custom plugins and scripts
-
 Server enhancements
+Minigame development
 
-Automation and minigame development
-
-Discord Bot Development:
-
+Discord Bot Development
 Custom commands
-
 Moderation tools
-
-Fun and utility bots
-
-How to Get Started
-
-Visit our website: Ax Development
-
-Browse available services.
-
-Contact us for custom requests.
+Utility and fun bots
 
 Why Choose Us?
 
-Professional and fast service
-
+Professional and reliable service
 Fully customized scripts and bots
-
-Friendly and responsive support
+Quick and responsive support
 
 Contact
-
-Reach out via:
-
-Email: abohussinsamer@gmail.com
 
 Discord: axdfcc
