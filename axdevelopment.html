@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ax Development - Minecraft & Discord Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif;}
+body {background:#111; color:#eee;}
+a {text-decoration:none; color:inherit;}
+
+header {
+    background:#1f1f1f; color:white; padding:20px 50px; display:flex; justify-content:space-between; align-items:center;
+    position:sticky; top:0; z-index:1000;
+}
+header h1 {font-size:24px; font-weight:bold;}
+nav a {margin-left:20px; font-weight:500; transition:0.3s;}
+nav a:hover {color:#00ff99;}
+
+.hero {
+    position:relative;
+    background: url('https://i.imgur.com/5V6zvXQ.jpg') center/cover no-repeat;
+    height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+    color:white; text-align:center; padding:0 20px;
+}
+.hero::after {
+    content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:0;
+}
+.hero h2, .hero p {position:relative; z-index:1; text-shadow:0 0 15px #00ff99;}
+.hero h2 {font-size:48px; margin-bottom:20px;}
+.hero p {font-size:20px; margin-bottom:30px;}
+
+.btn {
+    background: linear-gradient(90deg, #00ff99, #00cc7a);
+    color: #1f1f1f; padding: 15px 35px; border-radius: 12px; font-weight: bold;
+    transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,255,153,0.3);
+}
+.btn:hover {transform: scale(1.05); box-shadow: 0 10px 25px rgba(0,255,153,0.6); cursor:pointer;}
+
+section {padding:80px 50px;}
+section h2 {text-align:center; font-size:36px; margin-bottom:50px; color:#00ff99;}
+
+.services {display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+.card {background:#222; padding:30px; border-radius:15px; width:300px; box-shadow:0 5px 20px rgba(0,255,153,0.1); transition:0.3s;}
+.card:hover {transform: translateY(-10px) scale(1.03) rotate(-1deg); box-shadow:0 15px 35px rgba(0,255,153,0.3);}
+.card h3 {margin-bottom:15px; color:#00ff99;}
+.card p {margin-bottom:20px; line-height:1.5;}
+.card img {width:100%; border-radius:10px; margin-bottom:15px;}
+
+.portfolio-slider {overflow:hidden; width:100%; margin:0 auto; max-width:1000px;}
+.slide-track {display:flex; width:calc(320px*5); animation:scroll 20s linear infinite;}
+.slide-track img {width:300px; margin-right:20px; border-radius:15px; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(0,255,153,0.3);}
+.slide-track img:hover {box-shadow: 0 0 40px rgba(0,255,153,0.6); transform: scale(1.05);}
+@keyframes scroll {0%{transform:translateX(0);}100%{transform:translateX(-60%);}}
+
+.contact-form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:20px;}
+.contact-form input, .contact-form textarea {
+    padding:15px; border-radius:10px; border:1px solid #00ff99; width:100%; font-size:16px; background:#222; color:#eee;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {color:#ccc;}
+.contact-form button {padding:15px; border:none; border-radius:10px; background:#00ff99; color:#1f1f1f; font-weight:bold; cursor:pointer; transition:0.3s;}
+.contact-form button:hover {background:#00cc7a;}
+
+footer {background:#1f1f1f; color:white; text-align:center; padding:30px 20px;}
+footer a {color:#00ff99; margin:0 10px; transition:0.3s;}
+footer a:hover {color:#00cc7a;}
+
+.fade-in {opacity:0; transform: translateY(20px); transition:1s ease-out;}
+.fade-in.visible {opacity:1; transform: translateY(0);}
+
+@media(max-width:768px){
+    .services, .slide-track {flex-direction:column; align-items:center;}
+    header {flex-direction:column; gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Ax Development</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <h2>Custom Minecraft Skripts & Discord Bots</h2>
+    <p>High-quality, reliable, and fast development for your servers & communities.</p>
+    <a href="#contact" class="btn">Order Now</a>
+</section>
+
+<section id="services" class="fade-in">
+    <h2>My Services</h2>
+    <div class="services">
+        <div class="card">
+            <img src="https://i.imgur.com/uzmY4yJ.png" alt="Minecraft Skripting">
+            <h3>Minecraft Skripting</h3>
+            <p>Custom plugins, Skripts, mini-games, or server automation. Tailored exactly to your needs!</p>
+        </div>
+        <div class="card">
+            <img src="https://i.imgur.com/1U0bXyS.png" alt="Discord Bot Development">
+            <h3>Discord Bots</h3>
+            <p>Create bots for moderation, economy, music, and fun interactions. Fully customizable for your server.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="fade-in">
+    <h2>Portfolio</h2>
+    <div class="portfolio-slider">
+        <div class="slide-track">
+            <img src="https://i.imgur.com/AzvHTxN.png" alt="Project 1">
+            <img src="https://i.imgur.com/7pZf5vC.png" alt="Project 2">
+            <img src="https://i.imgur.com/kT0l2sE.png" alt="Project 3">
+            <img src="https://i.imgur.com/AzvHTxN.png" alt="Project 4">
+            <img src="https://i.imgur.com/7pZf5vC.png" alt="Project 5">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact / Order</h2>
+    <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="service" placeholder="Service (Minecraft Skript / Discord Bot)" required>
+        <textarea name="message" rows="5" placeholder="Describe your project..." required></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">Or pay directly via PayPal:</p>
+    <form action="https://www.paypal.com/donate" method="post" target="_top" style="text-align:center;">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID" />
+        <button type="submit" class="btn">Pay & Order</button>
+    </form>
+</section>
+
+<footer>
+    <p>Connect with me:</p>
+    <a href="https://discord.com" target="_blank">Discord</a>
+    <a href="mailto:your-email@example.com">Email</a>
+    <p>&copy; 2025 Ax Development</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in');
+    let delay = 0;
+    faders.forEach(fader => {
+        fader.style.transitionDelay = `${delay}s`;
+        delay += 0.2;
+    });
+    const appearOptions = { threshold: 0.1 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target);}
+        });
+    }, appearOptions);
+    faders.forEach(fader => {appearOnScroll.observe(fader);});
+});
+</script>
+
+</body>
+</html>
